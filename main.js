@@ -4,18 +4,18 @@ createApp({
     return {
       discs: null,
       selectCard: null,
-      isModalVisible: false,
+      modalVisible: false,
     };
   },
   methods: {
     centerCard(index) {
-      this.isModalVisible = true;
+      this.modalVisible = true;
       axios.get("script.php? index =" + index).then((response) => {
         this.selectCard = response.data[index];
       });
     },
     closeModal() {
-      this.isModalVisible = false;
+      this.modalVisible = false;
     },
   },
 

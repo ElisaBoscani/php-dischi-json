@@ -35,7 +35,7 @@
           </div>
         </div>
 
-        <div v-if="selectCard && isModalVisible" class="all_page  card" @click="closeModal()">
+        <div v-if="selectCard && modalVisible" class="all_page  card" @click="closeModal()">
           <img :src="selectCard.poster" class="w-25" alt="...">
           <div class="card-body p-1 d-flex flex-column align-items-center">
             <h3 class="text-white" class="card-text">{{selectCard.title}}</h3>
